@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List - Task</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .box1{
+            width: 55%;
+            background-color: rgb(173, 172, 172);
+            padding: 8px;
+            border: 3px double;
+        }
+        .box1 ul{
+            display: flex;
+            gap: 5px;
+            padding: 0px;
+        }
+        .box1 ul li{
+            list-style: none;
+        }
+        .box2{
+            width: 55%;
+            padding: 8px;
+            border: 3px double;            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>Click any of the following links</p>
+        <ul>
+            <li><a href="https://google.com" target="_blank">Open in New</a> |</li>
+            <li><a href="https://google.com" target="_self">Open in Self</a> |</li>
+            <li><a href="https://google.com" target="_parent">Open in Parent</a> |</li>
+            <li><a href="https://google.com">Open in Body</a></li>
+        </ul>
+    </div>
+    <div class="box2">
+        <h1>Link to an Email Address</h1>
+        <p>To Create a link that opens in the user's email program (to let them send a new email), use mailto: inside the attribute.</p>
+        <a href="mailto:vamshidhardawoor644@gmail.com">Send email</a>
+    </div>
+</body>
+</html>
