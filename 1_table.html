@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table - Task</title>
+    <title>Table - 1</title>
     <style>
         body{
             display: flex;
@@ -13,32 +13,23 @@
             align-items: center;
             height: 100vh;
         }
-        .table-container-1, .table-container-2{
+        .table-container{
             width: 100%;
             display: flex;
             justify-content: center;
         }
-        .table-container-1 table, .table-container-2 table{
+        .table-container table{
             width: 70%;
             background-color: aqua;
             border-collapse: collapse;
         }
-        .table-container-1 table th, .table-container-1 td{
+        .table-container table th, .table-container td{
             border: 2px solid aliceblue;
         }
-
-        .table-container-2 table th div, .table-container-2 td div{
-            border: 2px solid black;
-            border-radius: 12px;
-            padding: 2px;
-            /* border: none; */
-        }
-
-
     </style>
 </head>
 <body>
-    <div class="table-container-1">
+    <div class="table-container">
         <table>
             <thead>
                 <tr>                    
@@ -62,33 +53,6 @@
                     <td>John</td>
                     <td>Doe</td>
                     <td>80</td>
-                </tr>
-            </tbody>
-        </table>
-    </div><div class="table-container-2">
-        <table>
-            <thead>
-                <tr>                    
-                <th><div>Firstname</div></th>
-                <th><div>Lastname</div></th>
-                <th><div>Age</div></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><div>Jill</div></td>
-                    <td><div>Smith</div></td>
-                    <td><div>50</div></td>
-                </tr>
-                <tr>
-                    <td><div>Eve</div></td>
-                    <td><div>Jackson</div></td>
-                    <td><div>94</div></td>
-                </tr>
-                <tr>
-                    <td><div>John</div></td>
-                    <td><div>Doe</div></td>
-                    <td><div>80</div></td>
                 </tr>
             </tbody>
         </table>
