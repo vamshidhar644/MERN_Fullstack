@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 11</title>
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .Form-Container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+        }
+        .profile-icon{
+            background-color: greenyellow;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .Form-Container form{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .form-group{
+            width: 100%;
+        }
+        .form-group input{
+            padding: 8px;
+            width: 300px;
+            font-size: 15px;
+            height: 20px;
+        }
+        .btn-login{
+            background-color: green;
+            padding: 8px;
+            width: 300px;
+            text-align: center;
+            color: white;
+            border-radius: 6px;
+            border: 4px solid;
+        }
+        .form-group-check{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+        .form-group-cancel{
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            align-items: center;
+            padding: 6px;
+        }
+        .btn-cancel{
+            background-color: red;
+            padding: 6px 18px;
+            color: #efefef;
+            border-radius: 4px;
+        }
+        .form-group-cancel a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="Form-Container">
+        <div class="profile-icon"></div>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label><br/>
+                <input type="text" class="form-control" id="username" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label><br/>
+                <input type="password" class="form-control" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-group">
+                <div type="submit" class="btn btn-login">Login</div>
+            </div>
+            <div class="form-group-check">
+                <input type="checkbox" id="chkbox"/>
+                <label for="chkbox">Remember me</label>
+            </div>
+            <div class="form-group-cancel">
+                <div class="btn btn-cancel">Cancel</div>
+                <a href="">Forgot password?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
