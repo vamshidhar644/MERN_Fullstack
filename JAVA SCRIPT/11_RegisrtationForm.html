@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-TASK-11</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgb(255, 255, 198), rgb(255, 190, 201));
+            height: 720px;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        table {
+            width: 999px;
+            height: 100px;
+            margin: auto;
+        }
+        .id2 {
+            font-weight: bold;
+            text-align: center;
+        }
+        input[type=text],
+        input[type=number],
+        input[type=password] {
+            width: 50%;
+        }
+        .id {
+            text-align: right;
+        }
+        div {
+            text-align: center;
+        }
+        span {
+            color: red;
+        }
+        .final {
+            background-color: red;
+            width: 100px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form name="myform" onsubmit="return validation()">
+        <table>
+            <tr>
+                <h1>Registration form</h1>
+            </tr>
+            <tr>
+                <td class="id2"><label for="fname">First Name</label></td>
+                <td class="id1"><input type="text" id="fname" name="fname"></td>
+                <td><label id="error1" style="visibility: hidden; color: red;">POOR</label></td>
+            </tr>
+            <tr>
+                <td class="id2"><label for="lname">Last Name</label></td>
+                <td class="id1"><input type="text" id="lname" name="lname"></td>
+                <td><span id="error2" style="visibility: hidden;">POOR</span></td>
+            </tr>
+            <tr>
+                <td class="id2"><label for="email">Email</label></td>
+                <td class="id1"><input type="text" id="email" name="email"></td>
+                <td><span id="error3" style="visibility: hidden;">POOR</span></td>
+            </tr>
+            <tr>
+                <td class="id2"><label for="password">Password</label></td>
+                <td class="id1"><input type="password" id="password" name="password"></td>
+                <td><span id="error4" style="visibility: hidden;">POOR</span></td>
+            </tr>
+            <tr>
+                <td class="id2"><label for="reenterpassword">Re-enter Password</label></td>
+                <td class="id1"><input type="password" id="reenterpassword" name="reenterpassword"></td>
+                <td><span id="error5" style="visibility: hidden;">POOR OR MISMATCH</span></td>
+            </tr>
+            <tr>
+                <td class="id2"><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" id="genderMale" name="gender" value="male">
+                    <label for="genderMale">Male</label>
+                    <input type="radio" id="genderFemale" name="gender" value="female">
+                    <label for="genderFemale">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="id2"><label for="age">Age:</label></td>
+                <td class="id1"><input type="number" id="age" name="age"></td>
+                <td><span id="error6" style="visibility: hidden;">POOR</span></td>
+            </tr>
+            <tr>
+                <td class="id2"><label for="number">Phone Number</label></td>
+                <td class="id1"><input type="number" id="number" name="number"></td>
+                <td><span id="error7" style="visibility: hidden;">POOR</span></td>
+            </tr>
+            <tr>
+                <td class="id2"><label for="address">Address</label></td>
+                <td><textarea rows="5" cols="48" id="address" name="address"></textarea></td>
+                <td><span id="error8" style="visibility: hidden;">POOR</span></td>
+            </tr>
+            <tr>
+                <td class="id2"><label for="state">State</label></td>
+                <td class="id1"><input type="text" id="state" name="state"></td>
+            </tr>
+            <tr>
+                <td class="id2"><label for="country">Country</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="text">Choose your country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="id2"><label for="languages">Languages known</label></td>
+                <td>
+                    <input type="checkbox" id="english" name="languages" value="English">
+                    <label for="english">English</label>
+                    <input type="checkbox" id="kannada" name="languages" value="Kannada">
+                    <label for="kannada">Kannada</label>
+                    <input type="checkbox" id="hindi" name="languages" value="Hindi">
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" id="telugu" name="languages" value="Telugu">
+                    <label for="telugu">Telugu</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="test" name="test">Hereby I declare all the given details are true
+                </td>
+            </tr>
+            <tr class="id">
+                <td colspan="2">
+                    Log in to <a href="https://ethnus.com/">Ethnus</a> website
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>
+                        <input type="submit" value="Register" class="final">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function validation() {
+            var fnam = document.getElementById("fname");
+            var lnam = document.getElementById("lname").value;
+            var mail = document.getElementById("email").value;
+            var pword = document.getElementById("password").value;
+            var rpword = document.getElementById("reenterpassword").value;
+            var ag = document.getElementById("age").value;
+            var pnum = document.getElementById("number").value;
+            var adress = document.getElementById("address").value;
+
+            if (fnam.value == "") {
+                document.getElementById("error1").style.visibility = "visible";
+            }
+            if (lnam == "") {
+                document.getElementById("error2").style.visibility = "visible";
+            }
+            if (mail == "") {
+                document.getElementById("error3").style.visibility = "visible";
+            }
+            if (pword == "") {
+                document.getElementById("error4").style.visibility = "visible";
+            }
+            if (rpword == "") {
+                document.getElementById("error5").style.visibility = "visible";
+            }
+            if (ag == "") {
+                document.getElementById("error6").style.visibility = "visible";
+            }
+            if (pnum == "") {
+                document.getElementById("error7").style.visibility = "visible";
+            }
+            if (adress == "") {
+                document.getElementById("error8").style.visibility = "visible";
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

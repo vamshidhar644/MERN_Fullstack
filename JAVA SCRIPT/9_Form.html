@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-TASK-9</title>
+    <style>
+        body{
+         background-color: rgb(83, 8, 8);
+ 
+        }
+        .formdesign {
+          background-color: rgb(67, 17, 17);
+          color: white;
+          font-family: sans-serif;
+          margin: 100px;
+          padding: 30px;
+        }
+        .design{
+              width: 150px; 
+              margin-left: 70px;
+              padding:3px;
+        }
+        .design-1{
+              width: 150px; 
+              margin-left: 40px;
+             
+              padding:3px;
+        }
+        .design-2{
+              width: 150px; 
+              margin-left: 4px;
+             
+              padding:3px;
+        }
+        
+     
+     </style>
+</head>
+<body>
+    <form name="myform" class="formdesign" onsubmit="return form_validation()">
+        <div style="padding-left: 35%;">
+        Name: <input type="text" id="name" class="design" placeholder="your name">
+        <br><br>
+        Email: <input type="email" id="mail" class="design" placeholder="your email">
+        <br><br>
+        Password: <input type="password"  class="design-1" id="psword" >
+        <br><br>
+        Phone Number: <input type="number" class="design-2" id="pnumber" >
+        <br><br>
+         Gender:
+         <span style="margin-left: 50px;" >
+            Male:<input type="radio" name="Gender" value="male" id="rd1">
+            Female:<input type="radio" name="Gender" value="female" id="rd2" >
+            Other:<input type="radio" name="Gender" value="other" id="rd3" >
+         </span>
+         <br><br>
+         Language : <select name="Language" id="language" style="margin-left: 30px;" >
+            <option>Select Language</option>
+            <option>Telugu</option>
+            <option>Hindi</option>
+            <option>English</option>
+            <option>Tamil</option>
+
+         </select>
+         <br><br>
+         Zip Code: <input type="text" id="zip"  class="design-1">
+         <br><br>
+         About: <textarea rows="4" cols="30" placeholder="Write about your self...." id="about" style="margin-left: 60px;"></textarea>
+         <br><br>
+         <input type="submit" value="Register" style="text-align: center; margin-left: 0px; padding: 10px; background-color: white ;width: 400px; border-radius: 6px; font-weight: bold; font-size: larger;">
+        </div>
+    </form>
+    
+<script>
+    function form_validation(){
+         nam = document.getElementById("name").value;
+         ml = document.getElementById("mail").value;
+        pword = document.getElementById("psword").value;
+       pnum1=document.getElementById("pnumber").value;
+        gen1 = document.getElementById("rd1");
+        gen2 = document.getElementById("rd2");
+        gen3 = document.getElementById("rd3");
+        lan = document.getElementById("language").value;
+        zi = document.getElementById("zip").value;
+        ab = document.getElementById("about").value;
+        if(nam == ""){
+            alert("Enter your name");
+            return false;
+        }else if(ml == ""){
+            // mail.style.border="red solid 2px"
+            alert("Enter your Email");
+            return false;
+        }else if(pword == ""){
+            alert("Enter your password");
+            return false;
+        }else if(pnum1 == ""){
+            alert("Enter your phone number");
+            return false;
+        }else if(gen1.checked == false && gen2.checked == false && gen3.checked == false){
+            alert("Select the Gender");
+            return false;
+        }else if(zi == ""){
+            alert("Please Enter the Zip code");
+            return false;
+
+        }else if(ab == ""){
+            alert("Please Write about yourself");
+            return false;
+
+        }
+        
+        
+    }
+</script>
+   
+</body>
+
+
+</html>

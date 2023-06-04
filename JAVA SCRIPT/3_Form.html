@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-TASK-3</title>
+    <style>
+        label{
+            color:red;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form name="myform" onsubmit="return form_Validation()" >
+        
+        Name: <input type="text"  id="name" style="margin-left: 20px;" ><label id="error1" style="visibility: hidden;">This Field is requried</label>
+        <br><br>
+        
+        Email: <input type="email" id="email" style="margin-left: 20px;"><label id="error2" style="visibility: hidden;">A valid email address is requried</label>
+        <br><br>
+        
+        Website: <input type="url" name="fsite" id="link" style="margin-left: 10px;"><label id="error3" style="visibility: hidden;">A valid urlis requried</label>
+        <br><br>
+       Message:<textarea name="msg" rows="5" cols="30" id="fmsg" style="margin-left: 10px;"></textarea><label id="error4" style="visibility: hidden;text-align: start;">This Field is requried</label>
+        <br><br>
+    <input type="submit" value="submit">
+    </form>
+
+    <script>
+    
+
+        function form_Validation(){
+           var nam = document.getElementById("name");
+             var mail =document.getElementById("email");
+           var lin=document.getElementById("link");
+           var msg =document.getElementById("fmsg");
+            
+           if(nam.value==""){
+            nam.style.border="solid red";
+            document.getElementById("error1").style.visibility="visible";
+            
+           }if(mail.value==""){
+            mail.style.border="solid red";
+            document.getElementById("error2").style.visibility="visible";
+           
+            
+           } if(lin.value==""){
+            lin.style.border="solid red";
+            document.getElementById("error3").style.visibility="visible";
+            
+            
+           }
+            if(msg.value==""){
+            msg.style.border="solid red";
+            document.getElementById("error4").style.visibility="visible";
+            
+            
+           }
+
+         return false;
+          
+           
+        }
+    </script>
+</body>
+</html>

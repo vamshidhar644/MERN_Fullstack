@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-TASK-7</title>
+</head>
+<body>
+    <div style="border-style: solid; width: 300px;">
+    <form>
+        <b>1st Number:</b><input type="number" id="a">
+        <br>
+        <b>2nd Number:</b><input type="number" id="b">
+        <br>
+        <input type="button" value="Multiply" onclick="myfunction1()">
+        <input type="button" value="Divide" onclick="myfunction2()">
+
+       <p>The Result is : <br>
+        <span id="result"></span>
+    </p>
+    </form>
+
+</div>
+<script>
+    function myfunction1(){
+         x = document.getElementById("a").value;
+         y = document.getElementById("b").value;
+        document.getElementById("result").innerHTML= x * y ;
+    }
+    function myfunction2(){
+         x = document.getElementById("a").value;
+         y = document.getElementById("b").value;
+        document.getElementById("result").innerHTML= x / y;
+    }
+    
+</script>
+</body>
+</html>

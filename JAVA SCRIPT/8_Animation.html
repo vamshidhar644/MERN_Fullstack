@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-TASK-8</title>
+</head>
+<body>
+    <img id="result" src="image.jpg" width="160" height="120"> </img>
+   
+    <h1 style="color: blue;">Click the following buttons to handle animation</h1>
+    <input type="button" value="Start" id="start" onclick="myfunction1()" style="margin-left: 250px; ">
+    <input type="button" value="Stop" id="stop" onclick="myfunction2()" >
+     
+    <script>
+         function myfunction1(){
+             document.getElementById("result").src= "https://i.pinimg.com/originals/37/1f/54/371f54e6c0a67937bcca57b8ef8fa929.gif";
+         }
+
+         function myfunction2(){
+             document.getElementById("result").src= "image.jpg";
+         }
+    </script>
+</body>
+</html>
