@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <form >
+        
+        <div class="form group row my-3 position-relative">
+            <label for="validationTooltip02" class="col-sm-1 col-form label">First Name</label>
+            <div class="col-sm-10">
+                <div class="input-group has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                              </svg>
+                        </span>
+                    </div>
+                    
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="First Name" required>
+                      <div class="invalid-tooltip">Please supply your first name </div>
+                </div>
+             </div>
+        </div>
+
+        <div class="form group row my-3">
+            <label for="lname" class="col-sm-1 col-form label">Last Name</label>
+            <div class="col-sm-10">
+                <div class="input-group has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                              </svg>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" id="lname" placeholder="Last Name" required>
+                  <div class="invalid-tooltip">Please supply your last name </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="form group row my-3">
+            <label for="validationTooltipemail" class="col-sm-1 col-form label">E-Mail</label>
+            <div class="col-sm-10">
+                <div class="input-group has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        </svg>
+                        </span>
+                    </div>
+                 <input type="text" class="form-control" id="validationTooltipemail" placeholder="E-Mail Address" required>
+                  <div class="invalid-tooltip">Please supply your email address </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form group row my-3">
+            <label for="phone" class="col-sm-1 col-form label">Phone#</label>
+            <div class="col-sm-10">
+                <div class="input-group has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                              </svg>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" id="phone" placeholder="(845)555-1212" required>
+                  <div class="invalid-tooltip">Please supply your phone number </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form group row my-3">
+            <label for="address" class="col-sm-1 col-form label">Address</label>
+            <div class="col-sm-10">
+                <div class="input-group has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                              </svg>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" id="address" placeholder="Address" required>
+                  <div class="invalid-tooltip">Please supply your street address </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form group row my-3">
+            <label for="address" class="col-sm-1 col-form label">City</label>
+            <div class="col-sm-10">
+                <div class="input-group has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                              </svg>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" id="city" placeholder="City" required>
+                  <div class="invalid-tooltip">Please supply your city </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form group row my-3">
+            <label for="state" class="col-sm-1 col-form label">State</label>
+            <div class="col-sm-10">
+                <div class="input-group has-validation">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+                                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                                <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                              </svg>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" id="state" placeholder="Please select your state" required>
+                  <div class="invalid-tooltip">Please supply your city </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row my-3">
+            <label for="host" class="col-sm-1 col-form label">Do you have hosting?</label>
+            <div class="col-sm-10">
+                <input type="radio" >Yes
+                <br>
+                <input type="radio" >No
+            </div>
+        </div>
+        
+        <div class="col-12">
+            <button class="btn btn-warning" type="submit">Send</button>
+          </div>
+      </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
