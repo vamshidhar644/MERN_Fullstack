@@ -1,0 +1,27 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #efefef;
+}
+
+.Body-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  font-family: Verdana;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.73);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.73);
+  box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.73);
+}
+
+.text-area{
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 4px;
+}
